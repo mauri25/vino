@@ -1,0 +1,8 @@
+INSTALAR TIPOGRAFÍA
+
+-Doble click al archivo tipográfico que desea instalar. (.ttf)
+-En la ventana en pantalla  que se presenta donde muestra la tipografía, de los botones "Imprimir" e "Instalar", seleccionar Instalar.
+-Esperar a que la tipografía se instale.
+-Una vez realizado, cerrar la ventana y listo.
+
+¡Ya puedes usar la tipografía instalada!

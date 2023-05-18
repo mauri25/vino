@@ -1,0 +1,204 @@
+* {padding: 0;
+margin: 5;
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+padding: 0;
+line-height: 1.6;
+font-family: 'Noto Sans JP', sans-serif;
+}
+
+#principal {
+    background-image: url(./IMG/fondo.jpg) ;
+}
+
+p{
+    font-family: Daimonion;
+    font-size: 25px;
+}
+
+h1,h2 {
+    color: #472d2d;
+   font-family: Montserrat SemiBold;}
+
+#conteVinoCarusel{
+ height: 80vh;  
+ 
+ overflow: hidden;  
+ align-items:center;
+ background-color: #ffd180;
+}
+
+p{
+    text-align: justify;
+}
+
+.caruselvino {
+   
+   
+    height: 100%;
+    position: relative;
+}
+
+.tarjetacarusel{
+    
+    height: 100%;
+}
+
+.flechascarusel{
+     
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+
+}
+
+
+        a{
+            text-decoration: none;
+        }
+
+i{color: white;}
+
+#contePuntos{
+     display: flex;
+     justify-content: space-around;
+}
+
+#contePuntos > a{
+    font-size: 2em;
+    font-style: none;
+}
+
+.nav{
+    background: #ffab00;
+    height: 80px;
+    color: #fff;
+}
+
+.nav-container{
+   display: flex;
+   height: 100%;
+   width: 90%;
+   margin:0   auto;
+   justify-content: space-between;
+   align-items: center;  
+
+}
+
+.nav-logo{
+    font-size: 1.5em;
+    font-weight:900;
+
+}
+
+.nav_input:checked + .nav_menu{ background:#ffe57f;
+     
+}
+
+.nav_menu{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 3em;
+}
+
+.nav_intem{
+    color: #fff;
+    text-decoration: none;
+    --clippy:  polygon(0 0, 0 1%, 0 100%, 0% 100%);
+    font-family: Daimonion;
+    font-size: 25px;
+   
+}
+
+.nav_intem::after{
+    content: " ";
+    display: block;
+    background: #fff;
+width: 90%;
+margin-top:3px;
+height: 3px;
+clip-path: var(--clippy);
+transition: clip-path 0.5s;
+}
+
+.nav_intem:hover{
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.nav-label, .nav_input{
+    display: none;
+}
+
+@media (max-width: 10000px){
+    .nav-label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav_menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background:#ffab00;
+        width: 100%;
+        left: 0;
+        display:flex;
+        justify-content:space-evenly;
+        flex-direction:column;
+        align-items:center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+
+    .nav_input:checked + .nav_menu{ background:#ffab00;
+        clip-path: circle(100% at center);
+        
+     
+    }
+
+    
+}
+
+table{
+    margin-top:50px;
+    caption-side: bottom;
+    margin-left: auto;
+    margin-right:auto;
+    
+}
+
+th{
+    background-color:#ffab00;
+    color:#472d2d;
+    font-family: Daimonion;
+    font-size: 30px;
+}
+
+.color{
+    color:#472d2d;
+    background-color: #fff;
+    font-family: Daimonion;
+    font-size: 25px;
+}
+
+.tipografia{
+    font-family: Daimonion;
+    font-size: 25px;}
+
+td,th{
+    border: 2px solid black;
+    padding-left: 20px ;
+    padding-right: 20px;
+    padding-top: 10px ;
+    padding-bottom:10px;
+
+}
+
